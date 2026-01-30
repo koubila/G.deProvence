@@ -480,3 +480,19 @@ textarea:focus {
     font-size: 1.8rem;
   }
 }
+.territory-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 360px;
+}
+.hero-image {
+  padding: 0;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
