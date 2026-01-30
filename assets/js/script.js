@@ -22,11 +22,11 @@ if (navToggle && navLinks) {
 const contactForm = document.querySelector(".contact-form");
 const formStatus = document.getElementById("formStatus");
 
-if (contactForm && formStatus) {
-  contactForm.addEventListener("submit", e => {
-    e.preventDefault();
-    formStatus.textContent = "Merci, votre message a bien été envoyé (simulation).";
-    contactForm.reset();
-    setTimeout(() => (formStatus.textContent = ""), 4000);
-  });
-}
+// if (contactForm && formStatus) {
+//   contactForm.addEventListener("submit", e => {
+//     e.preventDefault();
+//     formStatus.textContent = "Merci, votre message a bien été envoyé (simulation).";
+//     contactForm.reset();
+//     setTimeout(() => (formStatus.textContent = ""), 4000);
+//   });
+// }
