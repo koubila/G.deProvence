@@ -88,12 +88,27 @@ a {
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0.05));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.28),
+    rgba(0, 0, 0, 0.05)
+  );
+
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 1.6rem 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 2.2rem 1rem;
+  gap: 1rem;
 }
+.banner-logo {
+  width: 190px;
+  max-width: 40vw;
+  opacity: 0.95;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+}
+
 
 .banner-tagline {
   color: #fff;
@@ -102,6 +117,123 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
+
+
+/* ÉTAT INITIAL — invisible */
+.banner-logo,
+.banner-tagline {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LANCÉE UNIQUEMENT QUAND L'IMAGE EST CHARGÉE */
+.banner.is-loaded .banner-logo,
+.banner.is-loaded .banner-tagline {
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+.banner.is-loaded .banner-logo {
+  animation-delay: 0.2s;
+}
+
+.banner.is-loaded .banner-tagline {
+  animation-delay: 0.45s;
+}
+
+/* DISPARITION AU SCROLL */
+.banner-logo {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.banner-logo.is-hidden {
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+}
+/* .banner-tagline {
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.45),
+    0 0 1px rgba(0, 0, 0, 0.6);
+} */
+.banner-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(215, 192, 192, 0.25),
+    rgba(0, 0, 0, 0.45)
+  );
+}
+
+
+/* ANIMATION FADE-IN BANNER */
+/* @keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-logo,
+.banner-tagline {
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+} */
+
+/* léger décalage pour une hiérarchie élégante */
+/* .banner-logo {
+  animation-delay: 0.2s;
+}
+
+.banner-tagline {
+  animation-delay: 0.45s;
+}
+.banner-logo {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.banner-logo.is-hidden {
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+} */
+ /* état initial */
+/* .banner-logo,
+.banner-tagline {
+  opacity: 0;
+  transform: translateY(12px);
+} */
+
+/* quand l'image est chargée */
+/* .banner.is-loaded .banner-logo,
+.banner.is-loaded .banner-tagline {
+  animation: fadeUp 0.9s ease-out forwards;
+}
+
+.banner.is-loaded .banner-logo {
+  animation-delay: 0.2s;
+}
+
+.banner.is-loaded .banner-tagline {
+  animation-delay: 0.45s;
+} */
+
+
 
 /* HEADER */
 

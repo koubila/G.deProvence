@@ -4,39 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>G. de Provence – Le luxe naturel</title>
-  <meta name="description" content="Soins et parfums d'ambiance inspirés de la Provence : ingrédients naturels, savoir-faire local et élégance contemporaine.">
+  <meta name="description" content="Soins et parfums d'ambiance pour hôtels de luxe et spas, inspirés de la Provence : ingrédients naturels, savoir-faire local et élégance contemporaine.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <div class="banner">
+<body class="theme-ecru">
+
+  <div class="banner">
     <img src="assets/img/abeille.jpg" alt="Abeille butinant la lavande en Provence" class="banner-image">
     <div class="banner-overlay">
+      <img src="assets/img/logo_gdeprovence.png" alt="Logo G. de Provence" class="banner-logo">
       <p class="banner-tagline">Né de la terre, façonné par la lumière.</p>
     </div>
   </div>
+
     <header class="site-header">
+        
         <div class="container header-inner">
+            <!-- Remplacer ce bloc par l'implémentation du vrai logo .ai en CSS/svg si besoin -->
             <div class="brand">
                 <span class="brand-mark">G.</span>
                 <span class="brand-text">de Provence</span>
             </div>
             <nav class="nav">
-            <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#maison">Maison</a></li>
-                <li><a href="#engagements">Engagements</a></li>
-                <li><a href="#univers">Univers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <a href="index.html" class="lang current" lang="fr" aria-current="page">FR</a>
-                <span class="lang-sep">/</span>
-                <a href="en/index.html" class="lang" lang="en">EN</a>
-            </div>
+              <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">☰</button>
+              <ul class="nav-links" id="navLinks">
+                  <li><a href="#maison">Maison</a></li>
+                  <li><a href="#engagements">Engagements</a></li>
+                  <li><a href="#hotels-spas">Hôtels & Spas</a></li>
+                  <li><a href="#univers">Univers olfactif</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+              <div class="lang-switch">
+                  <a href="index.html" class="lang current" lang="fr" aria-current="page">FR</a>
+                  <span class="lang-sep">/</span>
+                  <a href="en/index.html" class="lang" lang="en">EN</a>
+              </div>
             </nav>
         </div>
     </header>
-
 
   <main>
     <!-- HERO -->
@@ -46,25 +51,24 @@
           <p class="eyebrow">Maison de Provence</p>
           <h1>Né de la terre, façonné par la lumière.</h1>
           <p class="hero-text">
-            Soins et parfums d’ambiance inspirés du paysage provençal, alliant ingrédients naturels, savoir‑faire local et élégance contemporaine.
+            Soins et parfums d’ambiance dédiés aux hôtels de luxe et aux spas, inspirés du paysage provençal, alliant ingrédients naturels, savoir‑faire local et élégance contemporaine.
           </p>
           <div class="hero-actions">
             <a href="#engagements" class="btn primary">Découvrir nos engagements</a>
-            <a href="#univers" class="btn ghost">Explorer l’univers</a>
+            <a href="#hotels-spas" class="btn ghost">Pour hôtels & spas</a>
           </div>
         </div>
         <div class="hero-media" aria-hidden="true">
-          <!-- Ici tu pourras mettre une photo lavande/oliviers -->
           <div class="hero-card">
             <span class="hero-label">Luxe naturel</span>
-            <p>Lavande, amande douce, huile d’olive, lait d’ânesse : un territoire comme matière première.</p>
+            <p>Lavande, amande douce, lait d’ânesse : un territoire comme matière première, pensé pour les hôtels de luxe et les spas.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- MAISON -->
-    <section id="maison" class="section">
+    <section id="maison" class="section section-bg-ecru">
       <div class="container section-inner split">
         <div>
           <h2>Notre maison</h2>
@@ -72,32 +76,32 @@
             G. de Provence est née d’un attachement profond à la région, à ses plantes, à ses artisans, à son art de vivre.
           </p>
           <p>
-            Nous proposons des soins et des parfums d’ambiance inspirés du paysage provençal, en alliant ingrédients naturels, savoir‑faire local et esthétique contemporaine.
+            Nous créons des soins et des parfums d’ambiance pour hôtels de luxe et spas, inspirés du paysage provençal, en alliant ingrédients naturels, savoir‑faire local et esthétique contemporaine.
           </p>
           <p>
-            Nous croyons en un luxe calme, en la beauté simple et vraie, façonnée par la lumière et le vent, en des produits qui racontent la Provence telle qu’elle est vraiment.
+            Nous croyons en un luxe calme et discret, en la beauté simple et vraie, façonnée par la lumière et le vent, en des créations qui racontent la Provence telle qu’elle est vraiment.
           </p>
         </div>
         <div class="highlight-block">
           <h3>G. de Provence – Le luxe naturel</h3>
           <p>
-            De la lavande au lait d’ânesse, chaque ingrédient est choisi pour sa sincérité, sa trace locale et sa capacité à transmettre la douceur de cette terre.
+            De la lavande au lait d’ânesse, chaque ingrédient est choisi pour sa sincérité, sa trace locale et sa capacité à transmettre la douceur de cette terre aux hôtes de vos maisons.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ENGAGEMENTS -->
-    <section id="engagements" class="section section-alt">
+    <section id="engagements" class="section section-alt section-bg-violet">
       <div class="container">
         <h2>Nos engagements</h2>
         <p class="section-intro">
-          Préserver l’authenticité de la Provence et la réinventer avec exigence.
+          Préserver l’authenticité de la Provence et la réinventer pour les hôtels de luxe et les spas.
         </p>
         <div class="cards-grid">
           <article class="card">
             <h3>Origines maîtrisées</h3>
-            <p>Ingrédients provençaux privilégiés, dont notre Lavande Hautement Bleue, issus de partenaires locaux choisis.</p>
+            <p>Ingrédients provençaux privilégiés, issus de partenaires locaux choisis et d’artisans engagés.</p>
           </article>
           <article class="card">
             <h3>Formules propres</h3>
@@ -113,110 +117,137 @@
           </article>
           <article class="card">
             <h3>Excellence sensorielle</h3>
-            <p>Textures douces, parfums authentiques, façonnés avec des nez héritiers de la tradition grassoise.</p>
+            <p>Textures douces, parfums élégants et subtils, façonnés avec des nez héritiers de la tradition grassoise.</p>
           </article>
         </div>
       </div>
     </section>
 
-
-
-    <!-- TERRITOIRE / STORY -->
-
-    <section class="section">
-  <div class="container section-inner split">
-    <div>
-      <h2>Un territoire, une lumière</h2>
-      <p>
-        Au cœur de la Provence, une lumière glisse sur les pierres blanches, s’attarde dans les sillons de lavande et laisse dans l’air une douceur presque palpable.
-      </p>
-      <p>
-        Ce paysage n’est pas seulement un décor : c’est un héritage vivant, façonné par les distillateurs, les maîtres savonniers, les cueilleurs et les artisans depuis des générations.
-      </p>
-      <div class="badge-list">
-        <div class="badge-item">
-          <span class="badge-title">Lavande</span>
-          <p>Récoltée au petit matin pour en préserver la fraîcheur.</p>
+    <!-- HOTELS & SPAS -->
+    <section id="hotels-spas" class="section section-bg-ecru">
+      <div class="container section-inner split">
+        <div>
+          <h2>Pour les hôtels de luxe</h2>
+          <p>
+            G. de Provence accompagne les hôtels de luxe dans la création d’ambiances olfactives singulières : chambres, suites, couloirs et espaces de bien‑être.
+          </p>
+          <p>
+            Nos soins et parfums d’ambiance prolongent l’expérience de votre maison, en offrant à vos hôtes une signature olfactive mémorable.
+          </p>
         </div>
-        <div class="badge-item">
-          <span class="badge-title">Lait d’ânesse</span>
-          <p>Issu de petites fermes respectueuses du rythme animal.</p>
-        </div>
-        <div class="badge-item">
-          <span class="badge-title">Amande & olive</span>
-          <p>Douceurs vertueuses, nées du soleil provençal.</p>
+        <div>
+          <h2>Pour les spas</h2>
+          <p>
+            Les spas sont des lieux de pause et de régénération. Nos créations sont pensées pour sublimer les rituels de soin, du massage aux espaces de relaxation.
+          </p>
+          <p>
+            Lavande, amande douce et lait d’ânesse composent un univers sensoriel apaisant, en harmonie avec vos protocoles de soin.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="territory-image">
-      <img src="assets/img/village.jpg" alt="Lavande en Provence baignée de lumière douce">
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!-- TERRITOIRE / STORY -->
+    <section class="section section-bg-violet-light">
+      <div class="container section-inner split">
+        <div>
+          <h2>Un territoire, une lumière</h2>
+          <p>
+            Au cœur de la Provence, une lumière glisse sur les pierres blanches, s’attarde dans les sillons de lavande et laisse dans l’air une douceur presque palpable.
+          </p>
+          <p>
+            Ce paysage n’est pas seulement un décor : c’est un héritage vivant, façonné par les distillateurs, les maîtres savonniers, les cueilleurs et les artisans depuis des générations.
+          </p>
+          <div class="badge-list">
+            <div class="badge-item">
+              <span class="badge-title">Lavande</span>
+              <p>Récoltée au petit matin pour en préserver la fraîcheur.</p>
+            </div>
+            <div class="badge-item">
+              <span class="badge-title">Lait d’ânesse</span>
+              <p>Issu de petites fermes respectueuses du rythme animal.</p>
+            </div>
+            <div class="badge-item">
+              <span class="badge-title">Amande</span>
+              <p>Douceur enveloppante, inspirée des vergers provençaux.</p>
+            </div>
+          </div>
+        </div>
+        <div class="territory-image">
+          <img src="assets/img/village.jpg" alt="Lavande en Provence baignée de lumière douce">
+        </div>
+      </div>
+    </section>
 
-    <!-- UNIVERS PRODUITS -->
-    <section id="univers" class="section section-alt">
+    <!-- UNIVERS OLFACTIF -->
+    <section id="univers" class="section section-alt section-bg-ecru">
       <div class="container">
-        <h2>Un univers de soins et de parfums</h2>
+        <h2>Un univers olfactif pour hôtels & spas</h2>
         <p class="section-intro">
           Chaque création ouvre une fenêtre sur la Provence : collines fraîches, mistral pur, après‑midi d’été sous les oliviers.
         </p>
         <div class="cards-grid products">
           <article class="card product">
-            <h3>Soins pour le corps</h3>
-            <p>Crèmes, laits et savons qui subliment lavande, amande douce, huile d’olive et lait d’ânesse.</p>
+            <h3>Soins pour hôtels & spas</h3>
+            <p>Crèmes, laits et savons qui subliment trois signatures olfactives&nbsp;: lavande, amande douce et lait d’ânesse.</p>
             <span class="pill">Bientôt disponible</span>
           </article>
           <article class="card product">
             <h3>Parfums d’ambiance</h3>
-            <p>Brumes, bougies et parfums de maison inspirés de la garrigue, des fleurs de figuier et des collines.</p>
+            <p>Brumes et parfums de maison pour chambres, suites et espaces de détente, en harmonie avec l’âme de votre établissement.</p>
             <span class="pill">Bientôt disponible</span>
           </article>
           <article class="card product">
-            <h3>Éditions spéciales</h3>
-            <p>Séries limitées célébrant la Lavande Hautement Bleue et les saisons de Provence.</p>
-            <span class="pill">À venir</span>
+            <h3>Signature pour Lobby</h3>
+            <p>Création de bougies et diffuseurs de parfum en céramique, issus de l’artisanat provençal, avec cire végétale et signatures olfactives personnalisables.</p>
+            <span class="pill">Sur‑mesure</span>
           </article>
+        </div>
+        <div class="signature-notes">
+          <h3>Signatures olfactives</h3>
+          <ul>
+            <li><strong>Pour les soins hôtels & spas</strong> : lavande, amande douce, lait d’ânesse.</li>
+            <li><strong>Pour les bougies & diffuseurs</strong> : signatures variables selon les sensibilités de chaque client.</li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="section hero-image">
-        <img src="./assets/img/abeille.jpg" alt="Champs de lavande en Provence menant à un village">
-    </section>
-    <!-- CONTACT / NEWSLETTER -->
-    <section id="contact" class="section">
+
+    <!-- Bandeau abeille (réutilisé en bas si souhaité) -->
+    <!-- <section class="section hero-image section-bg-violet">
+      <img src="./assets/img/abeille.jpg" alt="Abeille et lavande en Provence">
+    </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-bg-ecru">
       <div class="container section-inner split">
         <div>
           <h2>Entrer en contact</h2>
           <p>
-            Vous êtes revendeur, hôtel, spa ou tout simplement curieux de découvrir la maison G. de Provence ? Écrivez‑nous.
+            Vous êtes hôtel de luxe ou spa et souhaitez imaginer une signature olfactive pour votre établissement ? Écrivez‑nous.
           </p>
         </div>
-<form class="contact-form" action="https://formspree.io/f/mgoybzzp" method="POST">
-  <div class="form-row">
-    <div class="form-group">
-      <label for="name">Nom</label>
-      <input type="text" id="name" name="name" placeholder="Votre nom" required>
-    </div>
-    <div class="form-group">
-      <label for="email">E‑mail</label>
-      <input type="email" id="email" name="_replyto" placeholder="vous@email.fr" required>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="3" placeholder="Votre demande" required></textarea>
-  </div>
+        <form class="contact-form" action="https://formspree.io/f/mgoybzzp" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E‑mail</label>
+              <input type="email" id="email" name="_replyto" placeholder="vous@email.fr" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3" placeholder="Votre demande" required></textarea>
+          </div>
 
-  <!-- Optionnel : sujet pour tes mails -->
-  <input type="hidden" name="_subject" value="Nouveau message depuis G. de Provence (FR)">
-  <!-- Optionnel : redirection après envoi -->
-  <!-- <input type="hidden" name="_next" value="https://koubila.github.io/G.deProvence/merci.html"> -->
+          <input type="hidden" name="_subject" value="Nouveau message depuis G. de Provence (FR)">
+          <!-- <input type="hidden" name="_next" value="https://koubila.github.io/G.deProvence/merci.html"> -->
 
-  <button type="submit" class="btn primary">Envoyer</button>
-</form>
-
+          <button type="submit" class="btn primary">Envoyer</button>
+        </form>
       </div>
     </section>
   </main>
